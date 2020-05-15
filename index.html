@@ -1,1 +1,155 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=favicon.ico><title>github-vue</title><link href=css/app.983e05db.css rel=preload as=style><link href=js/app.fda2c568.js rel=preload as=script><link href=js/chunk-vendors.2ff37768.js rel=preload as=script><link href=css/app.983e05db.css rel=stylesheet></head><body><noscript><strong>We're sorry but github-vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=js/chunk-vendors.2ff37768.js></script><script src=js/app.fda2c568.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YJBLOG</title>
+    <link rel="stylesheet" href="style/layout.css" media="screen" />
+    <!--线上使用AliIcon（推荐开发测试用）-->
+    <link rel="stylesheet" href="http:////at.alicdn.com/t/font_1809791_ca6jzd95fqa.css">
+
+</head>
+
+<body>
+    <script src="scripts/index.js"></script>
+    <!-- header -->
+    <div id="layout-header">
+        <div id="desc">
+            <!-- 头像 -->
+            <span class="avatar">
+                <img draggable="false" src="./assets/avatar.jpg" />
+            </span>
+            <h1>林中小舍</h1>
+            <h3 class="typer">
+                鄙人，花名林舍
+            </h3>
+        </div>
+        <div class="scroll-next " onclick="scrollToAnchor('anchor-next')">
+            <i class="iconfont icon-down"></i>
+        </div>
+
+    </div>
+    <span id="anchor-next"></span>
+
+    <!-- 内容 -->
+
+    <div id="layout">
+        <!-- 侧边栏 -->
+        <div id="nav">
+            <!-- 头像 -->
+            <div class="avatar-menu">
+                <img draggable="false" src="./assets/avatar.jpg" />
+            </div>
+            <h1>林中小舍</h1>
+            <!-- 列表 -->
+            <div id="menu">
+                <div id="home" onclick="scrollToAnchor('layout-header')">
+                    <i class="iconfont icon-home"> 主 页</i>
+                </div>
+                <div id="about-me" onclick="scrollToAnchor('about-next')">
+                    <i class="iconfont icon-nickname"> 关 于</i>
+                </div>
+                <div id="expri" onclick="scrollToAnchor('exprience')">
+                    <i class="iconfont icon-groupctrl"> 经 历</i>
+                </div>
+            </div>
+            <!-- footer -->
+            <div id="footer1">
+                <div id="footer1-avatat">
+                    <i class="iconfont icon-icon-test"></i>
+                    <i class="iconfont icon-icon-test1"></i>
+
+                </div>
+                <div id="footer1-link">
+                    <a href="#">©2020 林舍|Maner·Fan All rights reserved</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <span id="about-next"></span>
+            <div id="about">
+                <div class="information">
+                    <span class="title1">INFORMATION</span>
+                    <h2 class="title2">ABOUT ME</h2>
+                </div>
+
+                <div id="intro">
+                    <img draggable="false" src="./assets/about/avatar_about.jpg" />
+                    <div id="intro-contet">
+                        <h2>ABOUT ME</h2>
+                        <span>
+                            鄙人林舍，生于河北，纯北方汉子，苦读十二载，后求学于西安~<br />
+                            『厚德、求真、砺学、笃行』这是母校给予的八字真言，四年本科生涯、三年研究生涯，良师益友收获颇多~<br />
+                            求学之际偶遇佳人，毕业之后终成正果，小窝一间、少爷一个，平平淡淡、快快乐乐~<br />
+                            前有微波天线、后学电磁黑障，本非科班出身，出于热情投身猿类大军~<br />
+                            工作五六载，两域三城奔波，累哉累哉，自知其中快乐~<br />
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="exprience">
+                <div class="information">
+                    <span class="title1">EXPERIENCE</span>
+                    <h2 class="title2">MY EXPERIENCE</h2>
+                </div>
+                <ul id="position">
+                    <li class="pos-list">
+                        <span class="company">
+                            阿里巴巴（中国）网络技术有限公司
+                        </span>
+                        <span class="intro">
+                            Ali的包容性带来更广的舞台与更大的成长空间，身为Alier，很荣幸能在这样的一家公司共同奋斗、发展.
+                        </span>
+                    </li>
+                    <li class="pos-list">
+                        <span class="company">
+                            海航科技有限公司
+                        </span>
+                        <span class="intro">
+                            海航是将我引向’互联网’的一艘船<br />
+                            做为HNAer，很感谢HNA以及各位同仁能够提供这样一个舞台，来接触如此纷繁的、更为’互联网化’的技术，在HNA认识如此之多优秀的同仁尤为庆幸<br />
+                            很遗憾HNA的一些变故影响到了很多事情，也带来了很多不愉快<br />
+                        </span>
+                    </li>
+                    <li class="pos-list">
+                        <span class="company">
+                            北京数码视讯有限公司
+                        </span>
+                        <span class="intro">
+                            由于专业和课题的原因并未进入’理想’中的体制内，凭借着对coding的一腔热情，一头扎进了猿类大军<br />
+                            做为数码人，很感激数码在职场专业化成长上给予的空间<br />
+                        </span>
+                    </li>
+                    <li class="pos-list">
+                        <span class="company">
+                            西安电子科技大学
+                        </span>
+                        <span class="intro">
+
+                            惧怕过早接触社会选择了读研<br />
+                            三年研究生涯对于(课题)研究的 意义 有了更深层次的理解<br />
+                            由于自己的原因并没有继续读博，虽向往，但无悔<br />
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer">
+                <a href="#">©2020 林舍|Maner·Fan All rights reserved</a>
+                <img draggable="false" src="./assets/avatar.jpg" />
+                <div>
+                    <i class="iconfont icon-icon-test"></i>
+                    <i class="iconfont icon-icon-test1"></i>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
